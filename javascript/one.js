@@ -1,5 +1,7 @@
 import { cardGen as Card } from './card.js';
 
+import AvatarGen, { abc as fun, a } from './avatar.js';
+
 const arr = [
   {
     name: 'Rohan',
@@ -25,3 +27,6 @@ arr.forEach((item) => {
   const card = Card(item.name, item.details);
   container.append(card);
 });
+
+
+precati
