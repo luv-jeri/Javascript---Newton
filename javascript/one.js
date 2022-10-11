@@ -4,10 +4,9 @@ const btn = document.getElementById('btn');
 const container = document.getElementById('container');
 const titleInput = document.getElementById('title-input');
 const detailsInput = document.getElementById('details-input');
+const imgInput = document.getElementById('img-input');
 
 btn.addEventListener('click', function () {
-  console.log(titleInput.value);
-  console.log(detailsInput.value);
-  const card = Card(titleInput.value, detailsInput.value);
+  const card = Card(titleInput.value, detailsInput.value, imgInput.value);
   container.append(card);
 });

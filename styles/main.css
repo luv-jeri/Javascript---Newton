@@ -62,6 +62,13 @@ button {
     font-size: 30px;
 }
 
+.card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .card {
     width: 200px;
     height: 200px;
