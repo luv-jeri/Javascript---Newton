@@ -6,9 +6,60 @@
 
 body {
     background-color: rgba(0, 82, 93, 0.397);
+
+}
+
+#user-inputs {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+input {
+    border: 5px solid #FB2576;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 40px 0;
+    background-color: #000000;
+    color: #FB2576;
+    box-shadow: 11px 9px 33px 2px rgba(0, 0, 0, 0.57);
+    transition: 0.4s;
+}
+
+input:hover {
+    background-color: #FB2576;
+    color: #000000;
+    border: 5px solid #000000;
+    color: #000000;
+}
+
+input:focus {
+    background-color: #FB2576;
+    color: #000000;
+    border: 5px solid #000000;
+    color: #000000;
+}
+
+#container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    border: none;
+    background-color: #3F0071;
+    color: #eee;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .card {

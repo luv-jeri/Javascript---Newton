@@ -14,3 +14,4 @@ export function cardGen(Name, details) {
 
   return wrapper;
 }
+
