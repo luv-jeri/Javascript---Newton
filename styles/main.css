@@ -5,105 +5,37 @@
 }
 
 body {
-    background-color: rgba(0, 82, 93, 0.397);
-
+    background-color: #E26868;
 }
 
-#user-inputs {
-    margin-top: 50px;
-    margin-left: 50px;
+#wrapper {
+    height: 600px;
+    width: 600px;
+    background-color: #EDEDED;
 }
 
-input {
-    border: 5px solid #FB2576;
-    height: 40px;
-    margin-left: 30px;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    padding: 40px 0;
-    background-color: #000000;
-    color: #FB2576;
-    box-shadow: 11px 9px 33px 2px rgba(0, 0, 0, 0.57);
-    transition: 0.4s;
-}
-
-input:hover {
-    background-color: #FB2576;
-    color: #000000;
-    border: 5px solid #000000;
-    color: #000000;
-}
-
-input:focus {
-    background-color: #FB2576;
-    color: #000000;
-    border: 5px solid #000000;
-    color: #000000;
-}
-
-#container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-button {
-    height: 80px;
-    width: 120px;
-    text-align: center;
-    border: none;
-    background-color: #3F0071;
-    color: #eee;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.card-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.card {
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 10px;
-}
-
-.card-title {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.card-paragraph {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.avatar {
-    width: 100px;
-    height: 100px;
+#ball {
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    background-color: #905E96;
+
 }
 
-.avatar-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.animate {
+    animation-name: fall;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 500px);
+    }
 }
