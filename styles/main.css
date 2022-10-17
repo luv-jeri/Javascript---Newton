@@ -5,37 +5,61 @@
 }
 
 body {
-    background-color: #E26868;
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
 }
 
-#wrapper {
-    height: 600px;
-    width: 600px;
-    background-color: #EDEDED;
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-#ball {
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background-color: #905E96;
-
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.animate {
-    animation-name: fall;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #466362;
 }
 
-@keyframes fall {
-    0% {
-        transform: translate(0, 0);
-    }
+.card-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #466362;
+}
 
-    100% {
-        transform: translate(0, 500px);
-    }
+.card-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #466362;
+    margin-bottom: 30px;
 }
