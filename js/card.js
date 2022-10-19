@@ -1,10 +1,9 @@
-export function cardGen(Name, details, imgURL) {
+export default function cardGen(Name, details, imgURL) {
   const wrapper = document.createElement('div');
   const title = document.createElement('h1');
   const paragraph = document.createElement('p');
   const img = document.createElement('img');
-
-  console.log(imgURL);
+ 
   wrapper.classList.add('card');
   title.classList.add('card-title');
   paragraph.classList.add('card-paragraph');
